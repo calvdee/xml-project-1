@@ -1,0 +1,36 @@
+﻿<Window x:Class="NLPGui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NLP GUI" Height="565" Width="1120">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="146*" />
+            <RowDefinition Height="37*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="8.5*" />
+            <ColumnDefinition Width="8.5*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- CORPUS LISTVIEW -->
+        <StackPanel Margin="15" Orientation="Vertical" VerticalAlignment="Stretch"
+                   Grid.Column="0" Grid.RowSpan="2" >
+            <Label FontSize="20">Corpus List</Label>
+            <ListView Name="lstCorpus" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ListViewItem>Item1</ListViewItem>
+                <ListViewItem>Item1</ListViewItem>
+                <ListViewItem>Item1</ListViewItem>
+                <ListViewItem>Item4</ListViewItem>
+            </ListView>
+
+        </StackPanel>
+
+        <!-- DOCUMENT VIEW -->
+        <RichTextBox Name="rtbDocument" Margin="15"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2">
+        </RichTextBox>
+
+    </Grid>
+</Window>
